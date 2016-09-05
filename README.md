@@ -1,4 +1,4 @@
-# docker_image-debian8_lap
+# Docker image: debian8_lap
 
 ## Description
 
