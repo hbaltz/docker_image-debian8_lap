@@ -1,5 +1,5 @@
 FROM debian:8
-MAINTAINER Jakub Kwiatkowski <jakub@ajbisoft.pl>
+MAINTAINER Jakub Kwiatkowski "jakub@ajbisoft.pl"
 COPY sources.list /etc/apt/
 RUN apt-get update && apt-get install -y apache2 php5 \
   && apt-get -y --purge autoremove && apt-get clean && rm -rf /var/lib/apt/lists/*
