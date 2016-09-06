@@ -11,8 +11,8 @@ Official Debian 8 (debian:8) + apache2 + php5 docker image with some customizati
 
 ## Usage
 
-There are two main run-time settings that need to be passed to newly created container from this image:
-* There is no EXPOSE statement in Dockerfile, so port must be exposed when starting container by adding `-p 80:80` to your `docker run` statement
+There are two main run-time settings that may need to be passed to newly created container from this image:
+* Container provides HTTP service on port 80. If you want this port to be published on host interfaces add `-p 80:80` to your `docker run` statement
 * There is no VOLUME statement in Dockerfile, so data volume must be attached when starting container by adding `-v <path_to_your_datadir>:/var/www/` to your `docker run` statement
 
 ## Example
