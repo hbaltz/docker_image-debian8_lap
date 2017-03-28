@@ -11,6 +11,25 @@ Official Debian 8 (debian:8) + apache2 + php5 docker image with some customizati
 
 ## Usage
 
+### Create the folder
+```
+mkdir <path_to_your_datadir>/public
+```
+
+### Pull the git repositories
+```
+git pull <path-to-your-repo-git>
+```
+
+### Place the website source at the right place
+```
+cd <path-to-your-folder-git>/src
+
+cp -R ./ <path_to_your_datadir>/public
+```
+
+### Run the image
+
 There are two main run-time settings that may need to be passed to newly created container from this image:
 * Container provides HTTP service on port 80. If you want this port to be published on host interfaces add `-p 80:80` to your `docker run` statement
 * There is no VOLUME statement in Dockerfile, so data volume must be attached when starting container by adding `-v <path_to_your_datadir>:/var/www/` to your `docker run` statement
