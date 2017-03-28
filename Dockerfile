@@ -3,8 +3,8 @@ FROM jsurf/rpi-raspbian:latest
 MAINTAINER Hugo Baltz <hugobaltz@gmail.com>
 
 # Pour le apt-get
-ENV http_proxy http://10.0.4.2:3128
-ENV https_proxy https://10.0.4.2:3128
+#ENV http_proxy http://10.0.4.2:3128
+#ENV https_proxy https://10.0.4.2:3128
 
 COPY sources.list /etc/apt/
 
