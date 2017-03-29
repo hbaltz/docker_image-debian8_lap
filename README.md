@@ -1,5 +1,7 @@
 # Docker image: rpi-lap
 
+* [Docker hub repository](https://hub.docker.com/r/hbaltz/rpi-lap/)
+
 ## Description
 
 Official Debian 8 (debian:8) + apache2 + php5 docker image with some customization:
